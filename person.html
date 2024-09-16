@@ -1,18 +1,24 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>萌的Wiki</title>
+    <title>人物</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .no-bullets {
+            list-style-type: none; /* 取消项目符号 */
+            padding-left: 10px;       /* 取消默认的左边距 */
+        }
+    </style>
     <script src="scripts.js"></script>
 </head>
+
 <body>
     <header>
         <h1>萌的Wiki</h1> <!-- 网站标题 -->
         <nav>
             <ul>
-                <li><a href="#">主页</a></li> <!-- 导航链接 -->
+                <li><a href="index.html">主页</a></li> <!-- 导航链接 -->
                 <li><a href="#">关于网站作者</a></li> <!-- 关于 -->
                 <li><a href="#">联系方式</a></li> <!-- 联系我们 -->
             </ul>
@@ -34,8 +40,15 @@
         </ul>
     </nav>
 
+    <hr>
+
+    <ul class="no-bullets">
+        <h2>萌世界工作室</h2>
+            <h3><a href="person/mengyou404.html">萌友</h3>
+    </ul>
+    
     <footer>
-        <p>Copyright &copy; 2024 萌的Wiki</p>
+        <p>Copyright &copy; 2024 <a href="index.html">萌的Wiki</a></p>
     </footer>
 
 </body>

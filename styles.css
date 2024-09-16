@@ -1,39 +1,160 @@
-/* styles.css */
+/* 定义根元素的变量，用于统一和简化颜色配置 */
 :root {
     --primary-color: #333;
     --secondary-color: #444;
     --text-color: #fff;
 }
 
+/* 设置body的背景颜色、文字颜色和字体 */
 body {
     background-color: var(--primary-color);
     color: var(--text-color);
     font-family: Arial, sans-serif;
 }
 
+/* 为header、nav、main和footer定义内边距 */
 header, nav, main, footer {
-    padding: 20px;
+    padding: 10px;
 }
 
+/* 设置header的背景颜色、内边距、文本对齐方式和底部边框 */
 header {
-    background-color: var(--secondary-color);
+    background-color: #1e1e1e; /* 头部背景颜色 */
+    padding: 10px; /* 内边距 */
+    border-bottom: 1px solid #333; /* 底部边框 */
+    display: flex; /* 使用Flex布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    flex-direction: column; /* 子元素垂直排列 */
+    min-height: 100px; /* 最小高度 */
 }
 
+/* 使header中的搜索容器中的元素在水平方向上对齐 */
+header .search-container {
+    display: flex;
+    align-items: center;
+}
+
+/* 为header中的搜索输入框添加右外边距 */
+header .search-container input[type="text"] {
+    margin-right: 10px;
+}
+
+/* 移除nav列表的默认样式 */
 nav ul {
     list-style-type: none;
     padding: 0;
 }
 
+/* 设置nav列表项为行内元素，并添加右外边距 */
 nav ul li {
     display: inline;
     margin-right: 10px;
 }
 
+/* 设置nav列表项的链接颜色和文本装饰 */
 nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    border: 1px solid #ccc; /* 添加边框 */
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+/* 链接未访问时的颜色 */
+nav ul li a p:link {
     color: var(--text-color);
     text-decoration: none;
 }
 
-#search {
-    margin-left: 10px;
+/* 链接已访问时的颜色 */
+nav ul li a:visited {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* 鼠标悬停时的颜色 */
+nav ul li a:hover {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* 链接激活时的颜色 */
+nav ul li a:active {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* 为搜索结果容器添加上外边距、内边距、背景颜色和圆角 */
+#search-results {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 50px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    font-family: Arial, sans-serif; /* 设置字体 */
+    background-color: #121212; /* 背景颜色 */
+    color: #e0e0e0; /* 文字颜色 */
+    margin: 0; /* 移除默认外边距 */
+    padding: 0; /* 移除默认内边距 */
+}
+
+/* 搜索框样式 */
+.search-container {
+    margin-bottom: 10px; /* 搜索框底部外边距 */
+    position: relative; /* 相对定位 */
+}
+
+footer {
+    background-color: #1e1e1e; /* 页脚背景颜色 */
+    color: #e0e0e0; /* 页脚文字颜色 */
+    text-align: center; /* 居中文本 */
+    padding: 10px; /* 内边距 */
+    border-top: 1px solid #333; /* 顶部边框 */
+}
+
+/* 设置footer中的链接颜色 */
+footer a {
+    color: #fff; /* 白色 */
+    text-decoration: none;
+}
+
+/* 鼠标悬停时的颜色 */
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* 设置h3中的链接颜色 */
+h3 a {
+    color: #fff; /* 白色 */
+    text-decoration: none;
+}
+
+/* 鼠标悬停时的颜色 */
+h3 a:hover {
+    text-decoration: underline;
+}
+
+p a {
+    color: #fff; /* 白色 */
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+img {
+    max-width: 100%; /* 图片最大宽度 */
+    height: auto; /* 自动高度 */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    transform: translateX(10px);
 }
