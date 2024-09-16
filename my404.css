@@ -1,0 +1,39 @@
+/* styles.css */
+:root {
+    --primary-color: #333;
+    --secondary-color: #444;
+    --text-color: #fff;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+}
+
+header, nav, main, footer {
+    padding: 20px;
+}
+
+header {
+    background-color: var(--secondary-color);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+#search {
+    margin-left: 10px;
+}
